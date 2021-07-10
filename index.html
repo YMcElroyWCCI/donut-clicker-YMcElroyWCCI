@@ -4,9 +4,133 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donut Clicker</title>
+    <link rel="stylesheet" href="./css/donutMakerClickerStyle.css" />
+    <title>Donut Maker Clicker</title>
   </head>
+
   <body>
+    <header>
+      <nav>
+        <!-- Iteration 3 -->
+        <!-- Feature 5: Create a header with a link to a drop down element with information about the Company -->
+        <button type="button" class="collapsibleNavBar">About</button>
+        <div class="content">
+          <p>
+            Fred the Baker Baking Company began in 1954 when twin brothers
+            George and Fred Weasley created delicious baked goods from the
+            basement of a grocery store which was located across the street from
+             current location. After brother
+            George developed an allergy to flour, Fred and his wife, Jane became
+            the sole owners of Fred the Baker Baking Company. In 1957 Fred moved
+            the bakery to its current location at 1 North State Street in
+            Columbus, Ohio where the delicious baked goods have been enjoyed by
+            the citizens of Columbus and its surrounding communities for over
+            six decades.
+          </p>
+
+          <p>
+            In 1974, Fred Weasley's son, Fred Weasley II, began working at Fred
+            the Baker Baking Company. Enjoying the work, he moved on to
+            production and learned the craft of baking specialized in doughnuts.
+            Fred Weasley later gave the son the opportunity to purchase the
+            bakery when he retired. The son became the second owners of Fred the
+            Baker Baking Company in January 1987.
+          </p>
+
+          <p>
+            After 50 years of ownership, Fred Weasley II has decided he is ready
+            to retire and wants to keep his love of donuts alive as a game that
+            uses button clicks to create virtual donuts for the world to enjoy.
+          </p>
+        </div>
+
+        <!-- Feature 6: Create a header with a link to the Inspiration of our game. -->
+        <button type="button" class="collapsibleNavBar">Inspiration</button>
+        <div class="content">
+          <p>
+            The inspiration for Donut Maker Clicker was derived from
+            <a
+              href="https://orteil.dashnet.org/cookieclicker/"
+              target="cookieClicker"
+              >Cookie Clicker</a
+            >
+            game.
+          </p>
+          
+          <p>
+            Cookie Clicker is a javascript game created by Orteil on August
+            2013. The purpose of the game was for fun and 100% free. The game
+            allows user to bake cookies by clicking on a giant cookie. Everytime
+            the cookie is clicked, the number of cookies will increase. Once
+            there are enough cookies, upgrades to have other ingredients are
+            available. It is an endless gamesplay that last an indefinite amount
+            of time. Visit
+            <a href="https://cookieclicker.fandom.com/wiki/Cookie_Clicker_Wiki"
+              >Cookie Clicker Wiki</a
+            >
+            for more information.
+          </p>
+        </div>
+
+        <!-- Feature 7: Create a header with a link to a drop down element with information about the Developer. -->
+        <button type="button" class="collapsibleNavBar">Contact</button>
+        <div class="content">
+          <p>Donut Maker Clicker developer: Yuli McElroy</p>
+          <ul>
+            <li>
+              <a href="https://github.com/YMcElroyWCCI" target="github"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/yulimcelroy/"
+                target="linkedin"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <h1>Donut Maker Clicker</h1>
+      <h3>Fred the Baker Baking Company!</h3>
+
+    </header>
+
+    <body>
+      <!-- Feature 1: create a button to click -->
+      <!-- Feature 2: create a click count element -->
+      <!-- Feature 3: create a section for the auto clickers -->
+      <!-- Feature 4: create a section fo rthe donut multipliers -->
+      <h4><span class="donut-count">0</span> Donuts</h4>
+      
+      <img src="images/donut.png" name="donutButton" alt="jsDonutButton" class="donutButton">
+      
+      <div class="upgrades">
+          
+          <div class="auto-clicker-upgrade">
+              <h3 class="price">Auto Clicker Price</h3>
+              <h2><span id="auto-clicker-price">100</span> Donuts</h2>
+                  <button id="purchase-auto-clicker">Purchase Auto Clicker</button>
+              <h3 class="price">Total Purchased:</h3>
+              <h2><span id="auto-clickers-total">0</span></h2>
+          </div>
+          
+          <div class="click-multiplier-upgrade">
+              <h3 class="price">Click Multiplier Price</h3>
+              <h2><span id="click-multiplier-price">10</span> Donuts</h2>
+                  <button id="purchase-click-multiplier">Purchase Click Multiplier</button>
+              <h3 class="price">Total Purchased:</h3>
+              <h2><span id="click-multiplier">0</span></h2>
+          </div>
+
+      </div>
+
+      <button id="reset-game-button">Reset</button>
+
+  </body>
+
     <div class="container"></div>
     <script src="./index.js"></script>
   </body>

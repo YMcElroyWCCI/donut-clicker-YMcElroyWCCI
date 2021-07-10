@@ -1,0 +1,217 @@
+*{
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} 
+
+
+body {
+  /* background-color: #63C5DA; */
+  background-color: lightblue;
+  background-image: url("../images/sprinkles.png");
+}
+
+h1 {
+  color: blueviolet;
+  text-shadow: 3px 2px 5px rgb(92, 89, 89);
+  font-size: xxx-large;
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 2px;
+}
+
+h2 {
+  color: rgb(255, 162, 177);
+  text-shadow: 2px 2px 2px white;
+  text-align: center;
+  font-size: 18pt;
+  margin-bottom: 2px;
+  margin-top: 1px;
+}
+
+h3 {
+  color: blueviolet;
+  text-shadow: 2px 2px 5px rgb(177, 174, 174);
+  text-align: center;
+  margin-top: 1px;
+}
+
+nav {
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  background-color: teal;
+  width: 100%;
+  position: fixed;
+}
+
+.collapsibleNavBar {
+  background-color: teal;
+  color: pink;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  width: 20%;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  font-weight: bold;
+  position: relative;
+}
+
+.active,
+.collapsibleNavBar:hover {
+  background-color: pink;
+  color: blueviolet;
+  font-size: 11pt;
+  font-weight: bold;
+}
+
+.content {
+  background-image: url("../images/sprinkles.png");
+  color: blueviolet;
+  display: none;
+  padding: 0 12.75px 0px 12.75px;
+  border: line-style teal;
+  overflow: hidden;
+  background-color: pink;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+h4 {
+  color: rgb(255, 162, 177);
+  text-shadow: 2px 2px 2px white;
+  text-align: center;
+  font-size: 35pt;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  
+}
+
+.donutButton {
+  display: flex;
+  width: 20%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: -10px;
+}
+
+.donutButton:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+.donutButton:active {
+  transform: scale(1.05);
+}
+
+
+.upgrades {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.price {
+  color: blueviolet;
+  text-shadow: 2px 2px 5px rgb(177, 174, 174);
+  text-align: center;
+  font-size: 15pt;
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
+
+#purchase-auto-clicker {
+  background-color: teal;
+  border: none;
+  color: pink;
+  font-weight: bold;
+  font-size: medium;
+  padding: 10px;
+}
+
+#purchase-auto-clicker:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+#purchase-auto-clicker:active {
+  transform: scale(1.05);
+  border: none;
+  outline: none;
+}
+#purchase-auto-clicker:focus {
+  transform: scale(1.05);
+  border: none;
+  outline: none;
+}
+
+#purchase-click-multiplier {
+  background-color: teal;
+  border: none;
+  color: pink;
+  font-weight: bold;
+  font-size: medium;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+#purchase-click-multiplier:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+#purchase-click-multiplier:active {
+  transform: scale(1.05);
+  border: none;
+  outline: none;
+}
+#purchase-click-multiplier:focus {
+  transform: scale(1.05);
+  border: none;
+  outline: none;
+}
+
+#reset-game-button {
+  display: flex;
+  width: 5%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 10px;
+  padding: 12px;
+  min-width: 30px;
+  height: 40px;
+  background-color: grey;
+  border: none;
+  color: pink;
+  font-weight: bold;
+  font-size: medium;
+}
+
+#reset-game-button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+#reset-game-button:active {
+  transform: scale(1.05);
+  border: none;
+  outline: none;
+}
+#reset-game-button:focus {
+  transform: scale(1.05);
+  border: none;
+  outline: none;
+}
+
